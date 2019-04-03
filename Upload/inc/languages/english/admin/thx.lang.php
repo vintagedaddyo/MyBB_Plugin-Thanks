@@ -4,11 +4,11 @@
 *
 * File: thx.lang.php
 *
-* Authors: Huji Lee, AliReza Tofighi, SaeedGh, Vintagedaddyo
+* Authors: Huji Lee, AliReza Tofighi, SaeedGh, Vintagedaddyo, effone
 *
 * MyBB Version: 1.8
 *
-* Plugin Version: 3.9.3
+* Plugin Version: 3.9.4
 *
 */
 
@@ -19,7 +19,7 @@ $l['thx_desc'] = 'Add a Thanks button to user posts.';
 $l['thx_web'] = 'http://community.mybb.com/user-6029.html';
 $l['thx_auth'] = 'Huji Lee, SaeedGh & updated by Vintagedaddyo';
 $l['thx_authsite'] = 'http://community.mybb.com/user-6029.html';
-$l['thx_ver'] = '3.9.3';
+$l['thx_ver'] = '3.9.4';
 $l['thx_compat'] = '18*';
 
 // Setting Group
