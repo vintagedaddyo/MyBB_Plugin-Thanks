@@ -298,7 +298,10 @@ function thx(&$post)
 	}
 	
 	$display_style = $entries ?  "" : "hide";
-	
+	// 44 sort warning
+    $post['thanks'] = isset($post['thanks']) ? $post['thanks'] : ''; 
+    // 302 sort warning
+    $post['thxdsp_outline'] = isset($post['thxdsp_outline']) ? $post['thxdsp_outline'] : '';
 	eval("\$post['thxdsp_outline'] .= \"".$templates->get("thanks_postbit_outline")."\";");
 	
 	if($mybb->settings['thx_count'] == "1")
@@ -435,7 +438,10 @@ function build_thank($pid, &$is_thx)
 			$name = format_name($record['username'], $record['usergroup'], $record['displaygroup']);
 			$thx_cache['showname'][$record['username']] = "<a href=\"$url\" dir=\"$dir\">$name</a>";
 		}
-		
+        // 444 sort warning
+        $r1comma = isset($r1comma) ? $r1comma : ''; 
+        // 445 sort warning
+        $entries = isset($entries) ? $entries : ''; 
 		if($mybb->settings['thx_hidemode'])
 		{
 			$entries .= $r1comma." <span title=\"".$date."\">".$thx_cache['showname'][$record['username']]."</span>";
